@@ -1,5 +1,9 @@
 # DNScap
 
+- While analysing the `DNS` we shall find that there is a `PNG` header.
+- So the we shall understand that `PNG` image is being transmitted.
+- Let's write a `scapy` script to extract the necessary chunks to carve out the `PNG`.
+
 ```
 from scapy.all import *
 
@@ -25,3 +29,6 @@ f.write(y[95:]) # First few contains just some description.
 f.close()
 ```
 
+- Finally we shall get the png image.
+
+![](https://github.com/a3X3k/Forensics/blob/main/DNScap/final.png?raw=true)
