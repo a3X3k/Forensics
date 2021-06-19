@@ -1,4 +1,4 @@
-# It's Complicated / It's My Pal :
+# It's Complicated My Pal :
 
 - After analysing several packets we can conclude that there is something to be done with `ICMP`.
 - So apply the `ICMP filter` and start `analyzing`.
