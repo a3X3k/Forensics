@@ -44,4 +44,4 @@ with open("final.zip", "wb") as g: # Write to the File
 
 ![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/9.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Biz44re/flag.png?raw=true)
+![Bi0s](https://github.com/a3X3k/Forensics/blob/main/Biz44re/flag.png?raw=true)
