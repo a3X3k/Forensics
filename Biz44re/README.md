@@ -16,22 +16,31 @@
 
 ![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/8.jpeg?raw=true)
 
-```
+```py
 from scapy.all import *
 
 f=rdpcap('bizz.pcap')
+
 b = ''
 
 for i in f[ICMP]: # Filter ICMP Packets
+
 	if len(i) == 3528: # Filter Packet 1
+	
 		b+=str(i)[329:-1] # To Avoid Unwanted hex chunks slice the output
+		
 	if len(i) == 3526: # Filter Packet 2
+	
 		b+=str(i)[411:-1] # To Avoid Unwanted hex chunks slice the output
+		
 	if len(i) == 3524: # Filter Packet 3
+	
 		b+=str(i)[451:-1] # To Avoid Unwanted hex chunks slice the output
 	
 with open("final.zip", "wb") as g: # Write to the File
+
 	g.write(bytes.fromhex(b))
+	
 	g.close()
 ```
 
