@@ -151,7 +151,7 @@ zsteg -a flag.png  # All Info
 - So lets extract the entire `LSB payload` from the Image.
 
 ```
-zzsteg -E b1,bgr,lsb,xy flag.png
+zsteg -E b1,bgr,lsb,xy flag.png
 ```
 
 ![bi0s](https://github.com/a3X3k/Forensics/blob/main/Fresh%20From%20the%20Oven/Assets/18.png?raw=true)
@@ -163,7 +163,7 @@ zzsteg -E b1,bgr,lsb,xy flag.png
 - So lets try with `strings` command with `piping` to see if any readable text exist.
 
 ```
-zzsteg -E b1,bgr,lsb,xy flag.png | strings
+zsteg -E b1,bgr,lsb,xy flag.png | strings
 ```
 
 ![bi0s](https://github.com/a3X3k/Forensics/blob/main/Fresh%20From%20the%20Oven/Assets/20.png?raw=true)
@@ -172,7 +172,7 @@ zzsteg -E b1,bgr,lsb,xy flag.png | strings
 - Now lets `grep` it to see if there is a flag.
 
 ```
-zzsteg -E b1,bgr,lsb,xy flag.png | strings | grep -i inctf # Case insensitive
+zsteg -E b1,bgr,lsb,xy flag.png | strings | grep -i inctf # Case insensitive
 ```
 
 ![bi0s](https://github.com/a3X3k/Forensics/blob/main/Fresh%20From%20the%20Oven/Assets/21.png?raw=true)
